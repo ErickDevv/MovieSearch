@@ -23,12 +23,21 @@ This is a movie search app that uses the [OMDb API](https://www.omdbapi.com/) to
 ### Features
 
 - [x] TypeScript support
+  - With [ESLint](https://eslint.org/) integration for code linting
 - [x] Tailwind CSS implementation
-- [x] Custom fonts
+  - With [PostCSS](https://postcss.org/) integration
+  - Complemented with [NextUI](https://nextui.org/)
+- [x] CI/CD pipeline
+  - With [GitHub Actions](./.github/workflows/QA.yml) for Quality Assurance and [AWS Amplify](https://aws.amazon.com/amplify/) for continuous deployment.
+- [x] Custom fonts and dark mode
+  - To improve the user experience
 - [x] Responsive design
+  - To have Desktop and Mobile support
 
 ## Execution on local machine
 
+> [!TIP]
+> If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) extension to see the code comments in a better way.
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/)
