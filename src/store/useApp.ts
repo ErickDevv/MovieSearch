@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import MovieType from "../types/Movie";
 
 interface State {
   isLoading: boolean;
@@ -13,8 +14,8 @@ interface State {
   totalPages: number | 0;
   setTotalPages: (totalPages: number) => void;
 
-  movies: any[];
-  setMovies: (movies: any[]) => void;
+  movies: MovieType[];
+  setMovies: (movies: MovieType[]) => void;
 }
 
 export const useApp = create<State>((set) => ({

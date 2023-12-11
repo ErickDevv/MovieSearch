@@ -9,10 +9,13 @@ import {
 } from "@nextui-org/react";
 import { useDetails } from "../store/useDetails";
 
+import MovieType from "../types/Movie";
+import RatingType from "../types/Rating";
+
 import { useEffect, useState } from "react";
 
 const Details = () => {
-  const [movie, setMovie] = useState<any>({});
+  const [movie, setMovie] = useState<MovieType>({} as MovieType);
 
   const showDetails = useDetails((state) => state.showDetails);
   const toggleDetails = useDetails((state) => state.toggleDetails);
@@ -52,7 +55,7 @@ const Details = () => {
 
                 <div className="flex flex-col justify-center gap-2 mt-4">
                   <h3 className="text-xl">🏆Ratings</h3>
-                  {movie.Ratings?.map((rating: any) => (
+                  {movie.Ratings?.map((rating: RatingType) => (
                     <div className="flex flex-col justify-center gap-1">
                       <h4 className="text-lg">
                         → {rating.Source} -{" "}
