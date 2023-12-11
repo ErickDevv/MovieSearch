@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🍿Movie Search</h1>
-  <h2>Search for your favorite movies and get the details about them.
+  <h2>Search for your favorite movies and get the details about them!
   </h2>
   https://main.drrwj0pla1541.amplifyapp.com/
 </div>
