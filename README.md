@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Movie Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+- [About](#about)
+  - [Description](#description)
+  - [Features](#features)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+> .[!IMPORTANT].
+> This project was created with [React](https://react.dev/) and deployed with [AWS Amplify](https://aws.amazon.com/amplify/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Description
 
-- Configure the top-level `parserOptions` property like this:
+This is a movie search app that uses the [OMDb API](https://www.omdbapi.com/) to search for movies and display the results.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [x] TypeScript support
+- [x] Tailwind CSS implementation
+- [x] Custom fonts
+- [x] Responsive design
+
