@@ -1,4 +1,9 @@
-# 🍿Movie Search
+<div align="center">
+  <h1>🍿Movie Search</h1>
+  <h2>Search for your favorite movies and get the details about them.
+  </h2>
+  https://main.drrwj0pla1541.amplifyapp.com/
+</div>
 
 ## Table of Contents
 
@@ -38,6 +43,7 @@ This is a movie search app that uses the [OMDb API](https://www.omdbapi.com/) to
 
 > [!TIP]
 > If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) extension to see the code comments in a better way.
+
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/)
