@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [0.0.3] - 11/12/2023
+
+### Fixed
+
+- e2e tests were added to the project
+
+- CI with GitHub Actions was added to the project
+
+- The app theme was improved to be persistent
+
 ## [0.0.2] - 11/12/2023
 
 ### Fixed
