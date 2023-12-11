@@ -8,7 +8,7 @@
 
 ## About
 
-> .[!IMPORTANT].
+> [!IMPORTANT]
 > This project was created with [React](https://react.dev/) and deployed with [AWS Amplify](https://aws.amazon.com/amplify/).
 
 ### Description
