@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [0.0.2] - 11/12/2023
+
+### Fixed
+
+- Rename CHANGELOG to CHANGELOG.md
+
+- Fix API URL to use https instead of http
+
 ## [0.0.1] - 11/12/2023
 
 ### Added
