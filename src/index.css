@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist-Bold";
+  src: url("./fonts/Geist-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Geist-Regular";
+  src: url("./fonts/Geist-Regular.otf") format("opentype");
+}
