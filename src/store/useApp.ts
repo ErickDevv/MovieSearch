@@ -1,6 +1,13 @@
 import { create } from "zustand";
 import MovieType from "../types/Movie";
 
+/**
+ *
+ *        @DESCRIPTION
+ * * This is main store of the app, it contains all the states that are used in the app except the movie details.
+ *
+ */
+
 interface State {
   isLoading: boolean;
   setIsLoading: (isLoading: boolean) => void;

@@ -9,16 +9,27 @@ import {
 } from "@nextui-org/react";
 import { useDetails } from "../store/useDetails";
 
+// * 'MovieType' is a interface that defines the structure of a movie object.
 import MovieType from "../types/Movie";
+
+// * 'RatingType' is a type that defines the structure of a rating object.
 import RatingType from "../types/Rating";
 
 import { useEffect, useState } from "react";
 
 const Details = () => {
+  // *  Initialize a state variable 'movie' with an empty object of type 'MovieType'.
+  // *  'setMovie' is the function to update the 'movie' state.
   const [movie, setMovie] = useState<MovieType>({} as MovieType);
 
+  // *  'useDetails' is a custom hook. Here it's used to access the 'showDetails' state from the global state.
+  // *  'showDetails' is likely a boolean indicating whether the details should be shown or not.
   const showDetails = useDetails((state) => state.showDetails);
+
+  // *  'toggleDetails' is a function from the global state used to toggle the 'showDetails' state.
   const toggleDetails = useDetails((state) => state.toggleDetails);
+
+  //*  'title' is a state variable from the global state likely representing the title of the movie.
   const title = useDetails((state) => state.title);
 
   useEffect(() => {

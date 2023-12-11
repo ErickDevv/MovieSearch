@@ -4,13 +4,19 @@ import initialImage from "../assets/undraw_home_cinema_l7yl.svg";
 import { useApp } from "../store/useApp";
 
 const Movies = () => {
+  // * The 'useApp' hook to get the 'activePage' state, this is used to get the current active page.
   const activePage = useApp((state) => state.activePage);
 
+  // * If 'isLoading' is true, the 'Loading' component is rendered.
   const isLoading = useApp((state) => state.isLoading);
 
+  // * The 'movies' state is an array of objects of type 'MovieType', it is used to get the movies from the global state.
   const movies = useApp((state) => state.movies);
 
+  // * The 'useDetails' hook to update the 'title', these will be used to get the details of a movie.
   const setTitle = useDetails((state) => state.setTitle);
+
+  // * The 'useDetails' hook to toggle the 'showDetails' state, this is used to show the details of a movie.
   const toggleDetails = useDetails((state) => state.toggleDetails);
 
   return (

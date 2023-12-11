@@ -6,19 +6,24 @@ import Movies from "./components/Movies";
 import { useApp } from "./store/useApp";
 
 function App() {
+  // * These are state selectors. They are used to select a specific piece of state from the global state.
   const value = useApp((state) => state.search);
+  const isLoading = useApp((state) => state.isLoading);
+  const totalPages = useApp((state) => state.totalPages);
 
+  // * These are state setters. They are used to update a specific piece of state in the global state.
   const setValue = useApp((state) => state.setSearch);
   const setActivePage = useApp((state) => state.setActivePage);
-
-  const isLoading = useApp((state) => state.isLoading);
   const setIsLoading = useApp((state) => state.setIsLoading);
-
   const setMovies = useApp((state) => state.setMovies);
-
-  const totalPages = useApp((state) => state.totalPages);
   const setTotalPages = useApp((state) => state.setTotalPages);
 
+  // ! Read more about Zustand state management here: https://docs.pmnd.rs/zustand/getting-started/introduction
+
+  // * This is an asynchronous function that fetches movies from the OMDB API.
+  // * It first sets the isLoading state to true, indicating that the fetch operation has started.
+  // ! Then it fetches the data from the API using the provided search string and the API key from the environment variables.
+  // * After the data is fetched, it is returned as a JSON object.
   const fetchMovies = async (search: string) => {
     setIsLoading(true);
 
@@ -57,7 +62,7 @@ function App() {
           description="📌 Search and click on the movie poster to see more details."
           className=" font-geist-regular sm:w-96 w-[300px] mb-4"
           value={value}
-          onValueChange={async (value) => {
+          onValueChange={async (value: string) => {
             setValue(value);
 
             if (value.length === 0) {
@@ -91,7 +96,7 @@ function App() {
             <Pagination
               showControls
               total={totalPages}
-              onChange={(page) => setActivePage(page)}
+              onChange={(page: number) => setActivePage(page)}
             />
           </div>
         </div>

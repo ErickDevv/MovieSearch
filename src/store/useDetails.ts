@@ -1,5 +1,13 @@
 import { create } from "zustand";
 
+/**
+ *
+ *        @DESCRIPTION
+ * * This is the store for the movie details, it contains the title of the movie, a boolean to toggle the details
+ * * and the setter functions for both.
+ *
+ */
+
 interface State {
   title: string | null;
   showDetails: boolean;
