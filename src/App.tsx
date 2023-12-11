@@ -25,7 +25,7 @@ function App() {
     const API_KEY = import.meta.env.VITE_API_KEY;
 
     const res = await fetch(
-      `http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${search}`
+      `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${search}`
     );
 
     const data = await res.json();
