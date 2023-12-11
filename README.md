@@ -34,6 +34,8 @@ This is a movie search app that uses the [OMDb API](https://www.omdbapi.com/) to
   - Complemented with [NextUI](https://nextui.org/)
 - [x] CI/CD pipeline
   - With [GitHub Actions](./.github/workflows/QA.yml) for Quality Assurance and [AWS Amplify](https://aws.amazon.com/amplify/) for continuous deployment.
+- [x] Testing
+  - With [Playwright](https://playwright.dev/) for end-to-end testing
 - [x] Custom fonts and dark mode
   - To improve the user experience
 - [x] Responsive design
